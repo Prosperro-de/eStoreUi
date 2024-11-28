@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css-kit.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script/fetch-products.js" defer></script>
+    <script src="./script/fetch-discounts.js" defer></script>
+    <title>E-Store</title>
+</head>
+<body>
+<div class="main-page">
+    <header class="header">
+        <div class="main-container container-flex">
+            <a class="logo" href="">
+                <img src="image/header/Logo.png" alt="Main logo">
+            </a>
+            <div class="search-bar">
+                <img class="search-logo" src="image/header/Search.png" alt="search">
+                <input class="search-input" type="text" placeholder="Search..">
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a class="nav-menu-item" href="">Home</a>
+                </li>
+                <li>
+                    <a class="nav-menu-item" href="">About</a>
+                </li>
+                <li>
+                    <a class="nav-menu-item" href="">Contact Us</a>
+                </li>
+                <li>
+                    <a class="nav-menu-item" href="">Blog</a>
+                </li>
+            </ul>
+            <div class="user-menu">
+                <a href="">
+                    <img src="image/header/Favorites.png" alt="Favorite">
+                </a>
+                <a href="">
+                    <img src="image/header/Cart.png" alt="Cart">
+                </a>
+                <a href="">
+                    <img src="image/header/Profile.png" alt="My profile">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="main-container container-flex">
+                <div class="hero-content-container">
+                    <div class="hero-content">
+                        <p class="content-color content-text">Pro.Beyond</p>
+                        <h1 class="hero-title">iPhone 14 <span class="hero-title hero-title-pro">Pro</span></h1>
+                        <p class="content-color content-text-description">Created to change everything for the better.
+                            For everyone</p>
+                        <button class="button hero-button">Shop Now</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="hero-image" src="./image/Iphone_main.png" alt="iPhone">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-shop-items">
+            <div class="shop-items-left block-w6">
+                <div class="shop-items-left-1">
+                    <div>
+                        <img class="shop-items-left-1-img" src="./image/PlayStation.png" alt="Ps5 picture">
+                    </div>
+                    <div class="shop-items-left-1-desc">
+                        <h3 class="shop-items-left-1-head">Playstation 5</h3>
+                        <p class="shop-items-left-1-text">Incredibly powerful CPUs, GPUs,
+                            and an SSD with integrated I/O will redefine your PlayStation experience.</p>
+                    </div>
+                </div>
+
+                <div class="container-flex">
+                    <div class="shop-items-left-2 block-w6">
+                        <img src="./image/airPodsPro.png" alt="AirPods Pro">
+                        <div class="shop-items-left-desc">
+                            <h4 class="shop-items-left-head">Apple AirPods <span
+                                    class="shop-items-head-span">Max</span>
+                            </h4>
+                            <p class="shop-items-left-text">Computational audio. Listen, it's powerful</p>
+                        </div>
+                    </div>
+                    <div class="shop-items-left-3 block-w6 block-h6">
+                        <img src="./image/apple_vision.png" alt="Apple Vision Pro">
+                        <div class="shop-items-left-desc">
+                            <h4 class="shop-items-left-head text-col-white">Apple Vision <span
+                                    class="shop-items-head-span">Pro</span>
+                            </h4>
+                            <p class="shop-items-left-text">An immersive way to experience entertainment</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="shop-items-right block-w6">
+
+                <div class="shop-items-right-desc">
+                    <h4 class="shop-items-right-head">Macbook <span class="shop-items-head-span">Air</span></h4>
+                    <p class="shop-items-right-text">The new 15‑inch MacBook Air makes room for more of what you love
+                        with a spacious Liquid Retina display.</p>
+                    <button class="button top-sale-button">Shop Now</button>
+                </div>
+                <div class="shop-items-right-picture">
+                    <img src="./image/MacBookPro14.png" alt="Apple mac">
+                </div>
+
+            </div>
+        </div>
+        <div class="categories-browser">
+            <div class="main-container container-flex categories-container">
+                <h4 class="browser-title">Browse By Category</h4>
+                <div class="owl-carousel owl-theme owl-container categories-carousel">
+                    <div class="category-item">
+                        <a class="category-item-container" href="">
+                            <img class="category-img" src="./image/category/Phones.png" alt="Phone">
+                            <p class="category-text">Phones</p></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="category-item-container" href="">
+                            <img class="category-img" src="./image/category/Smart_Watches.png" alt="Smart Watch">
+                            <p class="category-text">Smart Watches</p></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="category-item-container" href="">
+                            <img class="category-img" src="./image/category/Cameras.png" alt="Camera">
+                            <p class="category-text">Cameras</p></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="category-item-container" href="">
+                            <img class="category-img" src="./image/category/Headphones.png" alt="Headphone">
+                            <p class="category-text">Headphones</p></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="category-item-container" href="">
+                            <img class="category-img" src="./image/category/Computers.png" alt="Computer">
+                            <p class="category-text">Computers</p></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="category-item-container" href="">
+                            <img class="category-img" src="./image/category/Gaming.png" alt="Gaming">
+                            <p class="category-text">Gaming</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured-products">
+            <div class="main-container container-flex ft-prod-container">
+                <div class="featured-products-categories">
+                    <h4 class="ft-prod-cat-text ft-prod-cat-selected">New Arrival</h4>
+                    <h4 class="ft-prod-cat-text">Bestseller</h4>
+                    <h4 class="ft-prod-cat-text">Featured Products</h4>
+                </div>
+                <div class="products">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="featured-categories">
+            <div class="ft-ct bg-white">
+                <div class="ft-pr-img-container-1">
+                    <img src="./image/featured-category/airpods-watch.png" alt="airpods">
+                </div>
+                <div class="ft-ct-desc-container ft-ct-margin-top-1 even-flex">
+                    <h3 class="ft-ct-name">Popular Products</h3>
+                    <p class="ft-ct-desc">iPad combines a magnificent 10.2-inch Retina display, incredible performance,
+                        multitasking
+                        and
+                        ease of use.</p>
+                    <button class="button ft-ct-btn btn-black bg-white">Shop Now</button>
+                </div>
+
+            </div>
+            <div class="ft-ct bg-light-gray">
+                <div class="ft-pr-img-container-2">
+                    <img class="ft-ct-img-1" src="./image/featured-category/ipad.png" alt="Ipad Pro">
+                </div>
+                <div class="ft-ct-desc-container ft-ct-margin-top-2 even-flex">
+                    <h3 class="ft-ct-name">Ipad Pro</h3>
+                    <p class="ft-ct-desc">iPad combines a magnificent 10.2-inch Retina display, incredible performance,
+                        multitasking
+                        and
+                        ease of use.</p>
+                    <button class="button ft-ct-btn btn-black bg-light-gray">Shop Now</button>
+                </div>
+            </div>
+            <div class="ft-ct bg-gray">
+                <div class="ft-pr-img-container-3">
+                    <img src="./image/featured-category/samsung-galaxy.png" alt="Samsung Galaxy">
+                </div>
+                <div class="ft-ct-desc-container ft-ct-margin-top-3 even-flex">
+                    <h3 class="ft-ct-name">Samsung Galaxy</h3>
+                    <p class="ft-ct-desc">iPad combines a magnificent 10.2-inch Retina display, incredible performance,
+                        multitasking
+                        and
+                        ease of use.</p>
+                    <button class="button ft-ct-btn btn-black bg-gray">Shop Now</button>
+                </div>
+            </div>
+            <div class="ft-ct bg-dark-gray">
+                <div class="ft-pr-img-container-4">
+                    <img src="./image/featured-category/Macbook.png" alt="Macbook Pro">
+                </div>
+                <div class="ft-ct-desc-container even-flex">
+                    <h3 class="ft-ct-name white">Macbook Pro</h3>
+                    <p class="ft-ct-desc">iPad combines a magnificent 10.2-inch Retina display, incredible performance,
+                        multitasking
+                        and
+                        ease of use.</p>
+                    <button class="button ft-ct-btn white btn-black bg-dark-gray">Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="discount-categories">
+            <div class="main-container container-flex ft-prod-container">
+
+                <h4 class="browser-title discount-title">Discounts up to -50%</h4>
+
+
+                <div class="products discount-products">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="marketing-banner">
+            <div class="container-flex marketing-container">
+                <h3 class="marketing-header">Big Summer <span class="marketing-sale">Sale</span></h3>
+                <p class="marketing-text">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+                <button class="button white marketing-btn">Shop Now</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="main-container footer-container">
+            <div class="footer-description">
+                <a class="logo" href="">
+                    <img src="image/footer/Logo.png" alt="Main logo">
+                </a>
+                <p class="footer-description-text">We are a residential interior design firm located in Portland. Our
+                    boutique-studio offers more
+                    than</p>
+            </div>
+
+            <div class="footer-services">
+                <a class="footer-header" href="">
+                    <p>Services</p>
+                </a>
+                <a class="footer-text" href="">
+                    <p>Bonus program</p>
+                </a>
+                <a class="footer-text" href=""><p>Gift cards</p></a>
+                <a class="footer-text" href=""><p>Credit and payment</p></a>
+                <a class="footer-text" href=""><p>Service contracts</p></a>
+                <a class="footer-text" href=""><p>Non-cash account</p></a>
+                <a class="footer-text" href=""><p>Payment</p></a>
+            </div>
+
+            <div class="footer-assistance">
+                <a class="footer-header" href="">Assistance to the buyer</a>
+                <a class="footer-text" href=""><p>Find an order</p></a>
+                <a class="footer-text" href=""><p>Terms of delivery</p></a>
+                <a class="footer-text" href=""><p>Exchange and return of goods</p></a>
+                <a class="footer-text" href=""><p>Guarantee</p></a>
+                <a class="footer-text" href=""><p>Frequently asked questions</p></a>
+                <a class="footer-text" href=""><p>Terms of use of the site</p></a>
+            </div>
+        </div>
+        <div class="media-container">
+
+            <a href="">
+                <img src="./image/footer/media/Twitter.png" alt="Twitter">
+            </a>
+
+            <a href="">
+                <img src="./image/footer/media/Facebook.png" alt="Facebook">
+            </a>
+
+            <a href="">
+                <img src="./image/footer/media/Tiktok.png" alt="Tiktok">
+            </a>
+
+            <a href="">
+                <img src="./image/footer/media/Instagram.png" alt="Instagram">
+            </a>
+
+        </div>
+    </footer>
+
+
+    <section class="hidden">
+        <div class="product-item" id="product-item-temp">
+            <div class="product-reaction-container">
+                <img src="./image/products/Favorite_duotone.png" alt="reaction">
+            </div>
+            <img class="product-img" src="" alt="">
+            <div class="product-desc-container ">
+                <p class="product-desc-text"></p>
+                <p class="product-desc-price"></p>
+                <button class="button sale-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="empty"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $(".categories-carousel").owlCarousel({
+            items: 6,
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 32
+        });
+    });
+</script>
+</html>
